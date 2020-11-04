@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <body>
+        
+        <splide>
+            <splide-slide>
+              <img src="images/1.svg">
+            </splide-slide>
+            <splide-slide>
+              <img src="images/2.svg">
+            </splide-slide>
+            <splide-slide>
+              <img src="images/3.svg">
+            </splide-slide>
+
+
+            <script>
+                import Vue from 'vue';
+                import App from './App';
+                import VueSplide from '@splidejs/vue-splide';
+        
+                Vue.use( VueSplide );
+        
+                new Vue( {
+                el    : '#app',
+                render: h => h( App ),
+                } );
+        
+        
+                import { Splide, SplideSlide } from '@splidejs/vue-splide';
+        
+                export default {
+                components: {
+                    Splide,
+                    SplideSlide,
+                },
+                }
+            </script>
+          </splide>
+    </body>
+    
+</html>
